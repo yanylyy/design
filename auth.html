@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авторизация</title>
+    <link rel="stylesheet" href="web/css/style.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <img class="logo" src="web/img/logo.svg" alt="Логотип">
+        </a>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <label for="menu-toggle" class="overlay"></label>
+        <nav class="mobile-nav">
+            <li><a href="index.html" class="bold">Главная</a></li>
+            <li><a href="service.html" class="bold">Услуги</a></li>
+            <li><a href="about_us.html" class="bold">О нас</a></li>
+            <li><a href="staff.html" class="bold">Мастера</a></li>
+            <div class="account-mobile">
+                <input type="checkbox" id="account-mobile-toggle" class="account-mobile-toggle">
+                <label for="account-mobile-toggle" class="account-mobile-label">
+                    Аккаунт
+                    <div class="account-mobile-arrow"></div>
+                </label>
+                <div class="account-mobile-dropdown">
+                    <nav>
+                        <li><a href="profile.html" class="bold-20">Профиль</a></li>
+                        <li><a href="auth.html" class="bold-20">Войти</a></li>
+                        <li><a href="#" class="bold-20">Выйти</a></li>
+                    </nav>
+                </div>
+            </div>
+        </nav>
+        <nav class="desktop-nav">
+            <li><a href="index.html" class="bold">Главная</a></li>
+            <li><a href="service.html" class="bold">Услуги</a></li>
+            <li><a href="about_us.html" class="bold">О нас</a></li>
+            <li><a href="staff.html" class="bold">Мастера</a></li>
+        </nav>
+        <div class="account desktop-account">
+            <input type="checkbox" id="account-toggle" class="account-toggle">
+            <label for="account-toggle" class="account-icon">
+                <img src="web/img/buttons/account.svg" alt="Профиль" class="account-img">
+            </label>
+            <div class="dropdown-menu">
+                <nav>
+                    <li><a href="profile.html" class="bold-20">Профиль</a></li>
+                    <li><a href="auth.html" class="bold-20">Войти</a></li>
+                    <li><a href="#" class="bold-20">Выйти</a></li>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="auth-main">
+        <div class="auth">
+            <p class="marmelad-36-w">Авторизация</p>
+            <form action="/test" method="get">
+                <div>
+                    <label for="login" class="marmelad-20-w">Логин</label>
+                    <input type="login" placeholder="Введите логин" name="login" id="login" maxlength="10" minlength="4"
+                        required class="button-auth">
+                </div>
+                <div>
+                    <label for="password" class="marmelad-20-w">Пароль</label>
+                    <input type="password" placeholder="Введите пароль" name="password" id="password" maxlength="10"
+                        minlength="4" required class="button-auth">
+                </div>
+                <div>
+                    <input type="checkbox" name="agree" id="agree">
+                    <label for="agree" class="bold-14-w">Запомнить меня</label>
+                </div>
+                <div>
+                    <button type="submit" class="button-auth1">Войти</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>

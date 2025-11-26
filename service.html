@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Услуги</title>
+    <link rel="stylesheet" href="web/css/style.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <img class="logo" src="web/img/logo.svg" alt="Логотип">
+        </a>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <label for="menu-toggle" class="overlay"></label>
+        <nav class="mobile-nav">
+            <li><a href="index.html" class="bold">Главная</a></li>
+            <li><a href="service.html" class="bold">Услуги</a></li>
+            <li><a href="about_us.html" class="bold">О нас</a></li>
+            <li><a href="staff.html" class="bold">Мастера</a></li>
+            <div class="account-mobile">
+                <input type="checkbox" id="account-mobile-toggle" class="account-mobile-toggle">
+                <label for="account-mobile-toggle" class="account-mobile-label">
+                    Аккаунт
+                    <div class="account-mobile-arrow"></div>
+                </label>
+                <div class="account-mobile-dropdown">
+                    <nav>
+                        <li><a href="profile.html" class="bold-20">Профиль</a></li>
+                        <li><a href="auth.html" class="bold-20">Войти</a></li>
+                        <li><a href="#" class="bold-20">Выйти</a></li>
+                    </nav>
+                </div>
+            </div>
+        </nav>
+        <nav class="desktop-nav">
+            <li><a href="index.html" class="bold">Главная</a></li>
+            <li><a href="service.html" class="bold">Услуги</a></li>
+            <li><a href="about_us.html" class="bold">О нас</a></li>
+            <li><a href="staff.html" class="bold">Мастера</a></li>
+        </nav>
+        <div class="account desktop-account">
+            <input type="checkbox" id="account-toggle" class="account-toggle">
+            <label for="account-toggle" class="account-icon">
+                <img src="web/img/buttons/account.svg" alt="Профиль" class="account-img">
+            </label>
+            <div class="dropdown-menu">
+                <nav>
+                    <li><a href="profile.html" class="bold-20">Профиль</a></li>
+                    <li><a href="auth.html" class="bold-20">Войти</a></li>
+                    <li><a href="#" class="bold-20">Выйти</a></li>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="service">
+        <div class="service__item">
+            <h2 class="service__title">Стрижки и укладки</h2>
+            <div class="service__content">
+                <div class="service__column">
+                    <div class="service__card">
+                        <div class="service__card-header">
+                            <div class="service__card-title">Стрижка женская</div>
+                            <div class="service__card-price">1000 ₽</div>
+                        </div>
+                        <div class="service__card-description">модельная стрижка с укладкой</div>
+                    </div>
+                    <div class="service__card">
+                        <div class="service__card-header">
+                            <div class="service__card-title">Стрижка мужская</div>
+                            <div class="service__card-price">700 ₽</div>
+                        </div>
+                        <div class="service__card-description">классическая мужская стрижка</div>
+                    </div>
+                </div>
+                <div class="service__column">
+                    <div class="service__card">
+                        <div class="service__card-header">
+                            <div class="service__card-title">Стрижка детская (от 0 до 7 лет)</div>
+                            <div class="service__card-price">500 ₽</div>
+                        </div>
+                        <div class="service__card-description">деликатная стрижка для детей</div>
+                    </div>
+                    <div class="service__card">
+                        <div class="service__card-header">
+                            <div class="service__card-title">Укладка вечерняя</div>
+                            <div class="service__card-price">1000 ₽</div>
+                        </div>
+                        <div class="service__card-description">создание праздничного образа</div>
+                    </div>
+                </div>
+                <button class="service__button">Записаться</button>
+            </div>
+        </div>
+        <div class="service__item">
+            <h2 class="service__title">Окрашивание волос</h2>
+            <div class="service__content">
+                <div class="service__column">
+                    <div class="service__card">
+                        <div class="service__card-header">
+                            <div class="service__card-title">Простое окрашивание</div>
+                            <div class="service__card-price">4500 ₽</div>
+                        </div>
+                        <div class="service__card-description">окрашивание корней / в один тон / тонирование</div>
+                    </div>
+                    <div class="service__card">
+                        <div class="service__card-header">
+                            <div class="service__card-title">Сложное окрашивание</div>
+                            <div class="service__card-price">6500 ₽</div>
+                        </div>
+                        <div class="service__card-description">окрашивание в два и более тонов / окрашивание корней и
+                            последующее тонирование</div>
+                    </div>
+                    <div class="service__card">
+                        <div class="service__card-header">
+                            <div class="service__card-title">Индивидуальное окрашивание</div>
+                            <div class="service__card-price">8000 ₽</div>
+                        </div>
+                        <div class="service__card-description">все виды сложного окрашивания / блондирования и
+                            тонирования</div>
+                    </div>
+                </div>
+                <div class="service__column">
+                    <div class="service__card">
+                        <div class="service__card-header">
+                            <div class="service__card-title">Мужское тонирование</div>
+                            <div class="service__card-price">2000 ₽</div>
+                        </div>
+                        <div class="service__card-description">тонирование для мужчин</div>
+                    </div>
+                    <div class="service__card">
+                        <div class="service__card-header">
+                            <div class="service__card-title">Декапирование волос</div>
+                            <div class="service__card-price">5000 ₽</div>
+                        </div>
+                        <div class="service__card-description">снятие старого цвета</div>
+                    </div>
+                    <div class="service__card">
+                        <div class="service__card-header">
+                            <div class="service__card-title">Тонирование волос</div>
+                            <div class="service__card-price">4000 ₽</div>
+                        </div>
+                        <p class="service__card-description">придание оттенка волосам</p>
+                    </div>
+                </div>
+                <button class="service__button">Записаться</button>
+            </div>
+        </div>
+        <div class="service__item">
+            <h2 class="service__title">Брови</h2>
+            <div class="service__content">
+                <div class="service__column">
+                    <div class="service__card">
+                        <div class="service__card-header">
+                            <div class="service__card-title">Комплекс: дизайн и окрашивание бровей</div>
+                            <div class="service__card-price">2500 ₽</div>
+                        </div>
+                        <div class="service__card-description">полный уход за бровями</div>
+                    </div>
+                    <div class="service__card">
+                        <div class="service__card-header">
+                            <div class="service__card-title">Дизайн бровей</div>
+                            <div class="service__card-price">1500 ₽</div>
+                        </div>
+                        <div class="service__card-description">коррекция формы бровей</div>
+                    </div>
+                </div>
+                <div class="service__column">
+                    <div class="service__card">
+                        <div class="service__card-header">
+                            <div class="service__card-title">Ламинирование бровей</div>
+                            <div class="service__card-price">1500 ₽</div>
+                        </div>
+                        <div class="service__card-description">выпрямление и фиксация волосков</div>
+                    </div>
+                    <div class="service__card">
+                        <div class="service__card-header">
+                            <div class="service__card-title">Окрашивание бровей</div>
+                            <div class="service__card-price">1500 ₽</div>
+                        </div>
+                        <div class="service__card-description">придание цвета бровям</div>
+                    </div>
+                </div>
+                <button class="service__button">Записаться</button>
+            </div>
+        </div>
+        <div class="service__item">
+            <h2 class="service__title">Уход за волосами</h2>
+            <div class="service__content">
+                <div class="service__column">
+                    <div class="service__card">
+                        <div class="service__card-header">
+                            <div class="service__card-title">Уход для волос KEVIN MERPHY</div>
+                            <div class="service__card-price">4000 ₽</div>
+                        </div>
+                        <div class="service__card-description">профессиональный уход</div>
+                    </div>
+                    <div class="service__card">
+                        <div class="service__card-header">
+                            <div class="service__card-title">Лечение LE LUMISS</div>
+                            <div class="service__card-price">4500 ₽</div>
+                        </div>
+                        <div class="service__card-description">восстановление структуры волос</div>
+                    </div>
+                </div>
+                <div class="service__column">
+                    <div class="service__card">
+                        <div class="service__card-header">
+                            <div class="service__card-title">Уход для волос K18</div>
+                            <div class="service__card-price">2000 ₽</div>
+                        </div>
+                        <div class="service__card-description">интенсивное восстановление</div>
+                    </div>
+                    <div class="service__card">
+                        <div class="service__card-header">
+                            <div class="service__card-title">Кератиновое выпрямление</div>
+                            <div class="service__card-price">7000 ₽</div>
+                        </div>
+                        <div class="service__card-description">выпрямление и гладкость волос</div>
+                    </div>
+                </div>
+                <button class="service__button">Записаться</button>
+            </div>
+        </div>
+        <div class="service__item">
+            <h2 class="service__title">Ресницы</h2>
+            <div class="service__content">
+                <div class="service__column">
+                    <div class="service__card">
+                        <div class="service__card-header">
+                            <div class="service__card-title">Ламинирование ресниц</div>
+                            <div class="service__card-price">1500 ₽</div>
+                        </div>
+                        <div class="service__card-description">выпрямление и фиксация ресниц</div>
+                    </div>
+                    <div class="service__card">
+                        <div class="service__card-header">
+                            <div class="service__card-title">Окрашивание ресниц</div>
+                            <div class="service__card-price">500 ₽</div>
+                        </div>
+                        <div class="service__card-description">придание цвета ресницам</div>
+                    </div>
+                </div>
+                <div class="service__column">
+                    <div class="service__card">
+                        <div class="service__card-header">
+                            <div class="service__card-title">Наращивание ресниц</div>
+                            <div class="service__card-price">2500 ₽</div>
+                        </div>
+                        <div class="service__card-description">классика</div>
+                    </div>
+                    <div class="service__card">
+                        <div class="service__card-header">
+                            <div class="service__card-title">Наращивание ресниц</div>
+                            <div class="service__card-price">3000 ₽</div>
+                        </div>
+                        <div class="service__card-description">объём 2D, 3D</div>
+                    </div>
+                </div>
+                <button class="service__button">Записаться</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-column-l">
+            <nav>
+                <li><a href="about_us.html" class="bold">О нас</a></li>
+                <li><a href="service.html" class="bold">Услуги</a></li>
+                <li><a href="staff.html" class="bold">Мастера</a></li>
+            </nav>
+        </div>
+        <div class="footer-column-r">
+            <div>
+                <p class="contacts">Контакты</p>
+                <p class="bold-w">+7 911 900 55 85</p>
+                <p class="bold-w">yani.hair@gmail.com</p>
+                <p class="address">Санкт-Петербург, Невский проспект, 64</p>
+            </div>
+            <div class="social-icons">
+                <a href="https://web.telegram.org/"><img src="web/img/social/telegram.svg" alt="Telegram"
+                        class="social"></a>
+                <a href="https://web.whatsapp.com/"><img src="web/img/social/whatsapp.svg" alt="WhatsApp"
+                        class="social"></a>
+            </div>
+        </div>
+        <div class="footer-down">
+            <p class="bold-w">YANIhair © 2007–2025</p>
+        </div>
+    </footer>
+</body>
+
+</html>

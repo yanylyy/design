@@ -1,0 +1,205 @@
+<html lang="ru-RU">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet" href="web/css/style.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <img class="logo" src="web/img/logo.svg" alt="Логотип">
+        </a>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <label for="menu-toggle" class="overlay"></label>
+        <nav class="mobile-nav">
+            <li><a href="index.html" class="bold">Главная</a></li>
+            <li><a href="service.html" class="bold">Услуги</a></li>
+            <li><a href="about_us.html" class="bold">О нас</a></li>
+            <li><a href="staff.html" class="bold">Мастера</a></li>
+            <div class="account-mobile">
+                <input type="checkbox" id="account-mobile-toggle" class="account-mobile-toggle">
+                <label for="account-mobile-toggle" class="account-mobile-label">
+                    Аккаунт
+                    <div class="account-mobile-arrow"></div>
+                </label>
+                <div class="account-mobile-dropdown">
+                    <nav>
+                        <li><a href="profile.html" class="bold-20">Профиль</a></li>
+                        <li><a href="auth.html" class="bold-20">Войти</a></li>
+                        <li><a href="#" class="bold-20">Выйти</a></li>
+                    </nav>
+                </div>
+            </div>
+        </nav>
+        <nav class="desktop-nav">
+            <li><a href="index.html" class="bold">Главная</a></li>
+            <li><a href="service.html" class="bold">Услуги</a></li>
+            <li><a href="about_us.html" class="bold">О нас</a></li>
+            <li><a href="staff.html" class="bold">Мастера</a></li>
+        </nav>
+        <div class="account desktop-account">
+            <input type="checkbox" id="account-toggle" class="account-toggle">
+            <label for="account-toggle" class="account-icon">
+                <img src="web/img/buttons/account.svg" alt="Профиль" class="account-img">
+            </label>
+            <div class="dropdown-menu">
+                <nav>
+                    <li><a href="profile.html" class="bold-20">Профиль</a></li>
+                    <li><a href="auth.html" class="bold-20">Войти</a></li>
+                    <li><a href="#" class="bold-20">Выйти</a></li>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main-content">
+            <div>
+                <img src="web/img/mainlargephoto.png" alt="Волосы девушки большое фото" class="large-photo-img">
+            </div>
+            <div class="right-content">
+                <div>
+                    <img src="web/img/mainsmallphoto.png" alt="Девушка маленькое фото" class="small-photo-img">
+                </div>
+                <div>
+                    <h1>YANIHair</h1>
+                    <p class="pod">Мы не просто меняем образы,<br>
+                        мы раскрываем вашу индивидуальность </p>
+                </div>
+                <div class="order">
+                    <button class="button-order">Записаться</button>
+                </div>
+            </div>
+        </div>
+        <div class="new-offers">
+            <h2>Новые предложения</h2>
+            <div class="new-card-img">
+                <div class="new-card">
+                    <img src="web/img/specialcard1.png" alt="Новое предложение 1" class="specialcard-img">
+                    <div class="new-card-header">
+                        <p class="new-card-title">Стрижка</p>
+                        <p class="new-card-price">1000 ₽</p>
+                    </div>
+                    <p class="new-description">Обновить стрижку или полностью сменить имидж? Стрижка,
+                        консультация стилиста, мытье головы и укладка - входит в стоимость услуги</p>
+                </div>
+                <div class="new-card">
+                    <img src="web/img/specialcard2.png" alt="Новое предложение 2" class="specialcard-img">
+
+                    <div class="new-card-header">
+                        <p class="new-card-title">Кератиновое выпрямление</p>
+                        <p class="new-card-price">7000 ₽</p>
+                    </div>
+                    <p class="new-description">Устали от борьбы с непослушными волосами и пушистостью? Подарите
+                        себе роскошь гладких и блестящих волос с помощью кератинового выпрямления!</p>
+                </div>
+
+                <div class="new-card">
+                    <img src="web/img/specialcard3.png" alt="Новое предложение 3" class="specialcard-img">
+
+                    <div class="new-card-header">
+                        <p class="new-card-title">Наращивание<br> ресниц</p>
+                        <p class="new-card-price">2500 ₽</p>
+                    </div>
+                    <p class="new-description">Мечтаете о выразительном, открытом взгляде без ежедневного
+                        макияжа? Наращивание ресниц — ваше идеальное решение!</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="our-works">
+            <h2>Наши работы</h2>
+            <div class="carousel">
+                <button class="carousel-btn-l">
+                    <img src="web/img/buttons/left.svg" alt="Предыдущая">
+                </button>
+                <div class="carousel-track">
+                    <div class="work-item">
+                        <img src="web/img/ourwork/ourwork1.png" alt="Наша работа 1">
+                    </div>
+                    <div class="work-item">
+                        <img src="web/img/ourwork/ourwork2.png" alt="Наша работа 2">
+                    </div>
+                    <div class="work-item">
+                        <img src="web/img/ourwork/ourwork3.png" alt="Наша работа 3">
+                    </div>
+                    <div class="work-item">
+                        <img src="web/img/ourwork/ourwork4.png" alt="Наша работа 4">
+                    </div>
+                    <div class="work-item">
+                        <img src="web/img/ourwork/ourwork5.png" alt="Наша работа 5">
+                    </div>
+                    <div class="work-item">
+                        <img src="web/img/ourwork/ourwork6.png" alt="Наша работа 6">
+                    </div>
+                    <div class="work-item">
+                        <img src="web/img/ourwork/ourwork7.png" alt="Наша работа 7">
+                    </div>
+                    <div class="work-item">
+                        <img src="web/img/ourwork/ourwork8.png" alt="Наша работа 8">
+                    </div>
+                    <div class="work-item">
+                        <img src="web/img/ourwork/ourwork9.png" alt="Наша работа 9">
+                    </div>
+                    <div class="work-item">
+                        <img src="web/img/ourwork/ourwork10.png" alt="Наша работа 10">
+                    </div>
+                </div>
+                <button class="carousel-btn-r">
+                    <img src="web/img/buttons/right.svg" alt="Следующая">
+                </button>
+            </div>
+        </div>
+        <div class="rating-block">
+            <div class="rating-item">
+                <img src="web/img/ratings/2gis.svg" alt="2гис" class="rating-logo">
+                <div class="rating-info">
+                    <div class="rating-review">100+ отзывов</div>
+                    <div class="rating-text">4.9</div>
+                </div>
+            </div>
+            <div class="rating-item">
+                <img src="web/img/ratings/yandex.svg" alt="Яндекс" class="rating-logo">
+                <div class="rating-info">
+                    <div class="rating-review">350+ отзывов</div>
+                    <div class="rating-text">5.0</div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-column-l">
+            <nav>
+                <li><a href="about_us.html" class="bold">О нас</a></li>
+                <li><a href="service.html" class="bold">Услуги</a></li>
+                <li><a href="staff.html" class="bold">Мастера</a></li>
+            </nav>
+        </div>
+        <div class="footer-column-r">
+            <div>
+                <p class="contacts">Контакты</p>
+                <p class="bold-w">+7 911 900 55 85</p>
+                <p class="bold-w">yani.hair@gmail.com</p>
+                <p class="address">Санкт-Петербург, Невский проспект, 64</p>
+            </div>
+            <div class="social-icons">
+                <a href="https://web.telegram.org/"><img src="web/img/social/telegram.svg" alt="Telegram"
+                        class="social"></a>
+                <a href="https://web.whatsapp.com/"><img src="web/img/social/whatsapp.svg" alt="WhatsApp"
+                        class="social"></a>
+            </div>
+        </div>
+        <div class="footer-down">
+            <p class="bold-w">YANIhair © 2007–2025</p>
+        </div>
+    </footer>
+</body>
+
+</html>

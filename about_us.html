@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О нас</title>
+    <link rel="stylesheet" href="web/css/style.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <img class="logo" src="web/img/logo.svg" alt="Логотип">
+        </a>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <label for="menu-toggle" class="overlay"></label>
+        <nav class="mobile-nav">
+            <li><a href="index.html" class="bold">Главная</a></li>
+            <li><a href="service.html" class="bold">Услуги</a></li>
+            <li><a href="about_us.html" class="bold">О нас</a></li>
+            <li><a href="staff.html" class="bold">Мастера</a></li>
+            <div class="account-mobile">
+                <input type="checkbox" id="account-mobile-toggle" class="account-mobile-toggle">
+                <label for="account-mobile-toggle" class="account-mobile-label">
+                    Аккаунт
+                    <div class="account-mobile-arrow"></div>
+                </label>
+                <div class="account-mobile-dropdown">
+                    <nav>
+                        <li><a href="profile.html" class="bold-20">Профиль</a></li>
+                        <li><a href="auth.html" class="bold-20">Войти</a></li>
+                        <li><a href="#" class="bold-20">Выйти</a></li>
+                    </nav>
+                </div>
+            </div>
+        </nav>
+        <nav class="desktop-nav">
+            <li><a href="index.html" class="bold">Главная</a></li>
+            <li><a href="service.html" class="bold">Услуги</a></li>
+            <li><a href="about_us.html" class="bold">О нас</a></li>
+            <li><a href="staff.html" class="bold">Мастера</a></li>
+        </nav>
+        <div class="account desktop-account">
+            <input type="checkbox" id="account-toggle" class="account-toggle">
+            <label for="account-toggle" class="account-icon">
+                <img src="web/img/buttons/account.svg" alt="Профиль" class="account-img">
+            </label>
+            <div class="dropdown-menu">
+                <nav>
+                    <li><a href="profile.html" class="bold-20">Профиль</a></li>
+                    <li><a href="auth.html" class="bold-20">Войти</a></li>
+                    <li><a href="#" class="bold-20">Выйти</a></li>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="about-hero">
+            <h1 class="about-title">О нас</h1>
+            <p class="about-main">Салон красоты YANIhair — это команда профессионалов, влюбленных в свое дело.</p>
+            <div class="about-gallery">
+                <img src="web/img/about/about1.png" alt="О нас 1" class="about-img">
+                <img src="web/img/about/about2.png" alt="О нас 2" class="about-img1">
+                <img src="web/img/about/about3.png" alt="О нас 3" class="about-img2">
+            </div>
+        </div>
+
+        <div class="about-sections">
+            <div class="about-section">
+                <div class="about-text-block">
+                    <p class="about-subtitle">С 2007 года мы дарим нашим клиентам уверенность в своей красоте <br>
+                        и безупречный стиль.</p>
+                </div>
+                <div class="about-image-block">
+                    <img src="web/img/about/about4.png" alt="О нас 4" class="about-content-img">
+                </div>
+            </div>
+
+            <div class="about-section reverse">
+                <div class="about-text-block">
+                    <p class="about-subtitle">Мы знаем все о современных техниках окрашивания, виртуозно владеем
+                        ножницами, создаем стильные укладки на каждый день и для особых событий, а также делаем взгляд
+                        неотразимы <br>с помощью безупречного ухода <br>за бровями и ресницами.</p>
+                </div>
+                <div class="about-image-block">
+                    <img src="web/img/about/about5.png" alt="О нас 5" class="about-content-img">
+                </div>
+            </div>
+        </div>
+
+        <div class="about-cta">
+            <p class="about-subtitle">Наша цель — ваш идеальный образ и уверенность в каждой детали.
+                Доверьтесь нам, и
+                вы увидите себя в новом свете!</p>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-column-l">
+            <nav>
+                <li><a href="about_us.html" class="bold">О нас</a></li>
+                <li><a href="service.html" class="bold">Услуги</a></li>
+                <li><a href="staff.html" class="bold">Мастера</a></li>
+            </nav>
+        </div>
+        <div class="footer-column-r">
+            <div>
+                <p class="contacts">Контакты</p>
+                <p class="bold-w">+7 911 900 55 85</p>
+                <p class="bold-w">yani.hair@gmail.com</p>
+                <p class="address">Санкт-Петербург, Невский проспект, 64</p>
+            </div>
+            <div class="social-icons">
+                <a href="https://web.telegram.org/"><img src="web/img/social/telegram.svg" alt="Telegram"
+                        class="social"></a>
+                <a href="https://web.whatsapp.com/"><img src="web/img/social/whatsapp.svg" alt="WhatsApp"
+                        class="social"></a>
+            </div>
+        </div>
+        <div class="footer-down">
+            <p class="bold-w">YANIhair © 2007–2025</p>
+        </div>
+    </footer>
+</body>
+
+</html>

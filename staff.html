@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мастера</title>
+    <link rel="stylesheet" href="web/css/style.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <img class="logo" src="web/img/logo.svg" alt="Логотип">
+        </a>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <label for="menu-toggle" class="overlay"></label>
+        <nav class="mobile-nav">
+            <li><a href="index.html" class="bold">Главная</a></li>
+            <li><a href="service.html" class="bold">Услуги</a></li>
+            <li><a href="about_us.html" class="bold">О нас</a></li>
+            <li><a href="staff.html" class="bold">Мастера</a></li>
+            <div class="account-mobile">
+                <input type="checkbox" id="account-mobile-toggle" class="account-mobile-toggle">
+                <label for="account-mobile-toggle" class="account-mobile-label">
+                    Аккаунт
+                    <div class="account-mobile-arrow"></div>
+                </label>
+                <div class="account-mobile-dropdown">
+                    <nav>
+                        <li><a href="profile.html" class="bold-20">Профиль</a></li>
+                        <li><a href="auth.html" class="bold-20">Войти</a></li>
+                        <li><a href="#" class="bold-20">Выйти</a></li>
+                    </nav>
+                </div>
+            </div>
+        </nav>
+        <nav class="desktop-nav">
+            <li><a href="index.html" class="bold">Главная</a></li>
+            <li><a href="service.html" class="bold">Услуги</a></li>
+            <li><a href="about_us.html" class="bold">О нас</a></li>
+            <li><a href="staff.html" class="bold">Мастера</a></li>
+        </nav>
+        <div class="account desktop-account">
+            <input type="checkbox" id="account-toggle" class="account-toggle">
+            <label for="account-toggle" class="account-icon">
+                <img src="web/img/buttons/account.svg" alt="Профиль" class="account-img">
+            </label>
+            <div class="dropdown-menu">
+                <nav>
+                    <li><a href="profile.html" class="bold-20">Профиль</a></li>
+                    <li><a href="auth.html" class="bold-20">Войти</a></li>
+                    <li><a href="#" class="bold-20">Выйти</a></li>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="staff-all">
+            <div class="staff-masters">
+                <p class="staff-title">Специалисты по окрашиваниям</p>
+                <div class="staff">
+                    <div>
+                        <img src="web/img/staff/staff1.png" alt="Мастер 1" class="staff-img">
+                        <p class="staff-name">Анастасия Ковалюк</p>
+                    </div>
+                    <div>
+                        <img src="web/img/staff/staff2.png" alt="Мастер 2" class="staff-img">
+                        <p class="staff-name">Роман Вантин</p>
+                    </div>
+                    <div>
+                        <img src="web/img/staff/staff3.png" alt="Мастер 3" class="staff-img">
+                        <p class="staff-name">Виктория Паржник</p>
+                    </div>
+                    <div>
+                        <img src="web/img/staff/staff4.png" alt="Мастер 4" class="staff-img">
+                        <p class="staff-name">Ксения Архипова</p>
+                    </div>
+                </div>
+            </div>
+            <div class="staff-masters">
+                <p class="staff-title">Специалисты по наращиванию ресниц</p>
+                <div class="staff">
+                    <div>
+                        <img src="web/img/staff/staff5.png" alt="Мастер 5" class="staff-img">
+                        <p class="staff-name">Юлия Верищагина</p>
+                    </div>
+                    <div>
+                        <img src="web/img/staff/staff6.png" alt="Мастер 6" class="staff-img">
+                        <p class="staff-name">Регина Соколова</p>
+                    </div>
+                    <div>
+                        <img src="web/img/staff/staff7.png" alt="Мастер 7" class="staff-img">
+                        <p class="staff-name">София Романова</p>
+                    </div>
+                    <div>
+                        <img src="web/img/staff/staff8.png" alt="Мастер 8" class="staff-img">
+                        <p class="staff-name">Милана Цветкова</p>
+                    </div>
+                </div>
+            </div>
+            <div class="staff-masters">
+                <p class="staff-title">Бровисты</p>
+                <div class="staff">
+                    <div>
+                        <img src="web/img/staff/staff9.png" alt="Мастер 9" class="staff-img">
+                        <p class="staff-name">Валерия Зимина</p>
+                    </div>
+                    <div>
+                        <img src="web/img/staff/staff10.png" alt="Мастер 10" class="staff-img">
+                        <p class="staff-name">Артём Волков</p>
+                    </div>
+                    <div>
+                        <img src="web/img/staff/staff11.png" alt="Мастер 11" class="staff-img">
+                        <p class="staff-name">Эмили Браун</p>
+                    </div>
+                    <div>
+                        <img src="web/img/staff/staff12.png" alt="Мастер 12" class="staff-img">
+                        <p class="staff-name">Вероника Лебедева</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-column-l">
+            <nav>
+                <li><a href="about_us.html" class="bold">О нас</a></li>
+                <li><a href="service.html" class="bold">Услуги</a></li>
+                <li><a href="staff.html" class="bold">Мастера</a></li>
+            </nav>
+        </div>
+        <div class="footer-column-r">
+            <div>
+                <p class="contacts">Контакты</p>
+                <p class="bold-w">+7 911 900 55 85</p>
+                <p class="bold-w">yani.hair@gmail.com</p>
+                <p class="address">Санкт-Петербург, Невский проспект, 64</p>
+            </div>
+            <div class="social-icons">
+                <a href="https://web.telegram.org/"><img src="web/img/social/telegram.svg" alt="Telegram"
+                        class="social"></a>
+                <a href="https://web.whatsapp.com/"><img src="web/img/social/whatsapp.svg" alt="WhatsApp"
+                        class="social"></a>
+            </div>
+        </div>
+        <div class="footer-down">
+            <p class="bold-w">YANIhair © 2007–2025</p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
