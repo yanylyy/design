@@ -4,11 +4,586 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Запись</title>
+    <link rel="stylesheet" href="web/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="web/img/logo.png">
 </head>
 
 <body>
+    <main>
+        <div class="booking-container">
+            <input class="window-toggle" type="radio" name="booking-window" id="window-step1" checked>
+            <input class="window-toggle" type="radio" name="booking-window" id="window-step2">
+            <input class="window-toggle" type="radio" name="booking-window" id="window-step3">
+            <input class="window-toggle" type="radio" name="booking-window" id="window-step4">
+            <div class="booking-window" id="window1">
+                <div class="booking-window-content">
+                    <div class="booking-title">YANIHair</div>
+                    <div class="booking-steps">
+                        <label for="window-step2" class="booking-step">
+                            <div class="step-text">Выберите услугу</div>
+                            <div class="step-arrow">›</div>
+                        </label>
+                        <label for="window-step3" class="booking-step">
+                            <div class="step-text">Выберите мастера</div>
+                            <div class="step-arrow">›</div>
+                        </label>
+                        <label for="window-step4" class="booking-step">
+                            <div class="step-text">Выберите дату и время</div>
+                            <div class="step-arrow">›</div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="booking-window" id="window2">
+                <div class="booking-window-content">
+                    <div class="booking-title">Выберите услугу</div>
 
+                    <div class="accordion accordion-flush custom-accordion" id="servicesAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                    aria-controls="flush-collapseOne">
+                                    Стрижки и укладки
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                data-bs-parent="#servicesAccordion">
+                                <div class="accordion-body p-0">
+                                    <label class="service-item">
+                                        <div class="service-info">
+                                            <div class="service-name">Стрижка женская</div>
+                                            <div class="service-details">1.5 ч. • стрижка + экспресс укладка + мытьё
+                                                головы + консультация</div>
+                                        </div>
+                                        <div class="service-price">1000 ₽</div>
+                                        <input type="radio" name="service" id="service1">
+                                    </label>
+                                    <label class="service-item">
+                                        <div class="service-info">
+                                            <div class="service-name">Стрижка мужская</div>
+                                            <div class="service-details">1 ч. • стрижка + экспресс укладка + мытьё
+                                                головы + консультация</div>
+                                        </div>
+                                        <div class="service-price">700 ₽</div>
+                                        <input type="radio" name="service" id="service2">
+                                    </label>
+                                    <label class="service-item">
+                                        <div class="service-info">
+                                            <div class="service-name">Стрижка детская (от 0 до 7 лет)</div>
+                                            <div class="service-details">1 ч. • стрижка + экспресс укладка + мытьё
+                                                головы + консультация</div>
+                                        </div>
+                                        <div class="service-price">500 ₽</div>
+                                        <input type="radio" name="service" id="service3">
+                                    </label>
+                                    <label class="service-item">
+                                        <div class="service-info">
+                                            <div class="service-name">Укладка вечерняя</div>
+                                            <div class="service-details">1.5 ч. • мытьё головы + сушка феном + укладка
+                                                волос в локоны + кудри</div>
+                                        </div>
+                                        <div class="service-price">1000 ₽</div>
+                                        <input type="radio" name="service" id="service4">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                    aria-controls="flush-collapseTwo">
+                                    Окрашивание волос
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#servicesAccordion">
+                                <div class="accordion-body p-0">
+                                    <label class="service-item">
+                                        <div class="service-info">
+                                            <div class="service-name">Простое окрашивание</div>
+                                            <div class="service-details">2.5 ч. • окрашивание корней / в один тон /
+                                                тонирование</div>
+                                        </div>
+                                        <div class="service-price">1000 ₽</div>
+                                        <input type="radio" name="service" id="service5">
+                                    </label>
+                                    <label class="service-item">
+                                        <div class="service-info">
+                                            <div class="service-name">Сложное окрашивание</div>
+                                            <div class="service-details">4-5 ч. • окрашивание в два и более тонов /
+                                                окрашивание корней и последующее тонирование / сложное окрашивание в
+                                                один тон / частичное мелирование</div>
+                                        </div>
+                                        <div class="service-price">6500 ₽</div>
+                                        <input type="radio" name="service" id="service6">
+                                    </label>
+                                    <label class="service-item">
+                                        <div class="service-info">
+                                            <div class="service-name">Индивидуальное окрашивание</div>
+                                            <div class="service-details">5-6 ч. • все виды сложного окрашивания +
+                                                индивидуальный подбор цвета</div>
+                                        </div>
+                                        <div class="service-price">8000 ₽</div>
+                                        <input type="radio" name="service" id="service7">
+                                    </label>
+                                    <label class="service-item">
+                                        <div class="service-info">
+                                            <div class="service-name">Мужское тонирование</div>
+                                            <div class="service-details">1.5 ч. • тонирование волос для мужчин</div>
+                                        </div>
+                                        <div class="service-price">2000 ₽</div>
+                                        <input type="radio" name="service" id="service8">
+                                    </label>
+                                    <label class="service-item">
+                                        <div class="service-info">
+                                            <div class="service-name">Декапирование волос</div>
+                                            <div class="service-details">2-3 ч. • удаление старого пигмента с волос
+                                            </div>
+                                        </div>
+                                        <div class="service-price">5000 ₽</div>
+                                        <input type="radio" name="service" id="service9">
+                                    </label>
+                                    <label class="service-item">
+                                        <div class="service-info">
+                                            <div class="service-name">Тонирование волос</div>
+                                            <div class="service-details">2 ч. • придание оттенка волосам без осветления
+                                            </div>
+                                        </div>
+                                        <div class="service-price">4000 ₽</div>
+                                        <input type="radio" name="service" id="service10">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                    aria-controls="flush-collapseThree">
+                                    Брови
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                data-bs-parent="#servicesAccordion">
+                                <div class="accordion-body p-0">
+                                    <label class="service-item">
+                                        <div class="service-info">
+                                            <div class="service-name">Комплекс: дизайн и окрашивание бровей</div>
+                                            <div class="service-details">45 мин. • коррекция формы + окрашивание
+                                                хной/краской</div>
+                                        </div>
+                                        <div class="service-price">2500 ₽</div>
+                                        <input type="radio" name="service" id="service11">
+                                    </label>
+                                    <label class="service-item">
+                                        <div class="service-info">
+                                            <div class="service-name">Дизайн бровей</div>
+                                            <div class="service-details">30 мин. • коррекция формы бровей</div>
+                                        </div>
+                                        <div class="service-price">1500 ₽</div>
+                                        <input type="radio" name="service" id="service12">
+                                    </label>
+                                    <label class="service-item">
+                                        <div class="service-info">
+                                            <div class="service-name">Ламинирование бровей</div>
+                                            <div class="service-details">1 ч. • выпрямление и фиксация волосков бровей
+                                            </div>
+                                        </div>
+                                        <div class="service-price">1500 ₽</div>
+                                        <input type="radio" name="service" id="service13">
+                                    </label>
+                                    <label class="service-item">
+                                        <div class="service-info">
+                                            <div class="service-name">Окрашивание бровей</div>
+                                            <div class="service-details">30 мин. • окрашивание бровей хной или краской
+                                            </div>
+                                        </div>
+                                        <div class="service-price">1500 ₽</div>
+                                        <input type="radio" name="service" id="service14">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                    aria-controls="flush-collapseFour">
+                                    Уход за волосами
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                data-bs-parent="#servicesAccordion">
+                                <div class="accordion-body p-0">
+                                    <label class="service-item">
+                                        <div class="service-info">
+                                            <div class="service-name">Уход для волос KEVIN MERPHY</div>
+                                            <div class="service-details">2 ч. • профессиональный уход для восстановления
+                                                волос</div>
+                                        </div>
+                                        <div class="service-price">4000 ₽</div>
+                                        <input type="radio" name="service" id="service15">
+                                    </label>
+                                    <label class="service-item">
+                                        <div class="service-info">
+                                            <div class="service-name">Лечение LE LUMISS</div>
+                                            <div class="service-details">2.5 ч. • интенсивное лечение поврежденных волос
+                                            </div>
+                                        </div>
+                                        <div class="service-price">4500 ₽</div>
+                                        <input type="radio" name="service" id="service16">
+                                    </label>
+                                    <label class="service-item">
+                                        <div class="service-info">
+                                            <div class="service-name">Уход для волос K18</div>
+                                            <div class="service-details">1.5 ч. • био-восстановительный уход для волос
+                                            </div>
+                                        </div>
+                                        <div class="service-price">2000 ₽</div>
+                                        <input type="radio" name="service" id="service17">
+                                    </label>
+                                    <label class="service-item">
+                                        <div class="service-info">
+                                            <div class="service-name">Кератиновое выпрямление</div>
+                                            <div class="service-details">3-4 ч. • выпрямление и восстановление волос
+                                                кератином</div>
+                                        </div>
+                                        <div class="service-price">7000 ₽</div>
+                                        <input type="radio" name="service" id="service18">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseFive" aria-expanded="false"
+                                    aria-controls="flush-collapseFive">
+                                    Ресницы
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFive" class="accordion-collapse collapse"
+                                data-bs-parent="#servicesAccordion">
+                                <div class="accordion-body p-0">
+                                    <label class="service-item">
+                                        <div class="service-info">
+                                            <div class="service-name">Ламинирование ресниц</div>
+                                            <div class="service-details">1.5 ч. • завивка и окрашивание натуральных
+                                                ресниц</div>
+                                        </div>
+                                        <div class="service-price">1500 ₽</div>
+                                        <input type="radio" name="service" id="service19">
+                                    </label>
+                                    <label class="service-item">
+                                        <div class="service-info">
+                                            <div class="service-name">Окрашивание ресниц</div>
+                                            <div class="service-details">30 мин. • окрашивание ресниц безопасной краской
+                                            </div>
+                                        </div>
+                                        <div class="service-price">500 ₽</div>
+                                        <input type="radio" name="service" id="service20">
+                                    </label>
+                                    <label class="service-item">
+                                        <div class="service-info">
+                                            <div class="service-name">Наращивание ресниц (классика)</div>
+                                            <div class="service-details">2-3 ч. • классика (по одной ресничке)</div>
+                                        </div>
+                                        <div class="service-price">2500 ₽</div>
+                                        <input type="radio" name="service" id="service21">
+                                    </label>
+                                    <label class="service-item">
+                                        <div class="service-info">
+                                            <div class="service-name">Наращивание ресниц (объем)</div>
+                                            <div class="service-details">3-4 ч. • объём 2D, 3D (пучковое наращивание)
+                                            </div>
+                                        </div>
+                                        <div class="service-price">3000 ₽</div>
+                                        <input type="radio" name="service" id="service22">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-between mt-3">
+                        <label for="window-step1" class="booking-button">Назад</label>
+                        <label for="window-step3" class="booking-button">Далее</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="booking-window" id="window3">
+                <div class="booking-window-content">
+                    <div class="booking-title">Выберите мастера</div>
+
+                    <div class="masters-list">
+                        <label class="master-item">
+                            <img src="web/img/profile/profile3.png" alt="Анастасия Ковалюк" class="master-img">
+                            <div class="master-name">Анастасия Ковалюк</div>
+                            <input type="radio" name="master" id="master1">
+                        </label>
+
+                        <label class="master-item">
+                            <img src="web/img/profile/profile1.png" alt="Роман Вантин" class="master-img">
+                            <div class="master-name">Роман Вантин</div>
+                            <input type="radio" name="master" id="master2">
+                        </label>
+
+                        <label class="master-item">
+                            <img src="web/img/profile/profile2.png" alt="София Романова" class="master-img">
+                            <div class="master-name">София Романова</div>
+                            <input type="radio" name="master" id="master3">
+                        </label>
+
+                        <label class="master-item">
+                            <img src="web/img/order/order4.png" alt="Регина Соколова" class="master-img">
+                            <div class="master-name">Регина Соколова</div>
+                            <input type="radio" name="master" id="master4">
+                        </label>
+
+                        <label class="master-item">
+                            <img src="web/img/order/order5.png" alt="Артем Волков" class="master-img">
+                            <div class="master-name">Артем Волков</div>
+                            <input type="radio" name="master" id="master5">
+                        </label>
+                    </div>
+
+                    <div class="d-flex justify-content-between mt-3">
+                        <label for="window-step1" class="booking-button">Назад</label>
+                        <label for="window-step4" class="booking-button">Далее</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="booking-window" id="window4">
+                <div class="booking-window-content">
+                    <div class="booking-title">Выберите дату и время</div>
+
+                    <div class="calendar-container">
+                        <div class="calendar-month">
+                            <div class="calendar-header">
+                                <div class="calendar-month-name">Январь 2026</div>
+                            </div>
+
+                            <div class="calendar-weekdays">
+                                <div>Пн</div>
+                                <div>Вт</div>
+                                <div>Ср</div>
+                                <div>Чт</div>
+                                <div>Пт</div>
+                                <div>Сб</div>
+                                <div>Вс</div>
+                            </div>
+
+                            <div class="calendar-days">
+                                <label class="calendar-day">
+                                    <input type="radio" name="booking-date">
+                                    <div>1</div>
+                                </label>
+                                <label class="calendar-day">
+                                    <input type="radio" name="booking-date">
+                                    <div>2</div>
+                                </label>
+                                <label class="calendar-day">
+                                    <input type="radio" name="booking-date">
+                                    <div>3</div>
+                                </label>
+                                <label class="calendar-day">
+                                    <input type="radio" name="booking-date">
+                                    <div>4</div>
+                                </label>
+                                <label class="calendar-day">
+                                    <input type="radio" name="booking-date">
+                                    <div>5</div>
+                                </label>
+                                <label class="calendar-day weekend">
+                                    <input type="radio" name="booking-date">
+                                    <div>6</div>
+                                </label>
+                                <label class="calendar-day weekend">
+                                    <input type="radio" name="booking-date">
+                                    <div>7</div>
+                                </label>
+                                <label class="calendar-day">
+                                    <input type="radio" name="booking-date">
+                                    <div>8</div>
+                                </label>
+                                <label class="calendar-day">
+                                    <input type="radio" name="booking-date">
+                                    <div>9</div>
+                                </label>
+                                <label class="calendar-day">
+                                    <input type="radio" name="booking-date">
+                                    <div>10</div>
+                                </label>
+                                <label class="calendar-day">
+                                    <input type="radio" name="booking-date">
+                                    <div>11</div>
+                                </label>
+                                <label class="calendar-day">
+                                    <input type="radio" name="booking-date">
+                                    <div>12</div>
+                                </label>
+                                <label class="calendar-day">
+                                    <input type="radio" name="booking-date">
+                                    <div>13</div>
+                                </label>
+                                <label class="calendar-day">
+                                    <input type="radio" name="booking-date">
+                                    <div>14</div>
+                                </label>
+                                <label class="calendar-day">
+                                    <input type="radio" name="booking-date">
+                                    <div>15</div>
+                                </label>
+                                <label class="calendar-day">
+                                    <input type="radio" name="booking-date">
+                                    <div>17</div>
+                                </label>
+                                <label class="calendar-day">
+                                    <input type="radio" name="booking-date">
+                                    <div>18</div>
+                                </label>
+                                <label class="calendar-day">
+                                    <input type="radio" name="booking-date">
+                                    <div>19</div>
+                                </label>
+                                <label class="calendar-day">
+                                    <input type="radio" name="booking-date">
+                                    <div>20</div>
+                                </label>
+                                <label class="calendar-day">
+                                    <input type="radio" name="booking-date">
+                                    <div>21</div>
+                                </label>
+                                <label class="calendar-day">
+                                    <input type="radio" name="booking-date">
+                                    <div>22</div>
+                                </label>
+                                <label class="calendar-day">
+                                    <input type="radio" name="booking-date">
+                                    <div>23</div>
+                                </label>
+                                <label class="calendar-day">
+                                    <input type="radio" name="booking-date">
+                                    <div>24</div>
+                                </label>
+                                <label class="calendar-day">
+                                    <input type="radio" name="booking-date">
+                                    <div>25</div>
+                                </label>
+                                <label class="calendar-day">
+                                    <input type="radio" name="booking-date">
+                                    <div>26</div>
+                                </label>
+                                <label class="calendar-day">
+                                    <input type="radio" name="booking-date">
+                                    <div>27</div>
+                                </label>
+                                <label class="calendar-day">
+                                    <input type="radio" name="booking-date">
+                                    <div>28</div>
+                                </label>
+                                <label class="calendar-day">
+                                    <input type="radio" name="booking-date">
+                                    <div>29</div>
+                                </label>
+                                <label class="calendar-day">
+                                    <input type="radio" name="booking-date">
+                                    <div>30</div>
+                                </label>
+                                <label class="calendar-day">
+                                    <input type="radio" name="booking-date">
+                                    <div>31</div>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="time-selection">
+                            <div class="time-slots">
+                                <label class="time-slot">
+                                    <input type="radio" name="booking-time" id="time-10">
+                                    <div>10:00</div>
+                                </label>
+                                <label class="time-slot">
+                                    <input type="radio" name="booking-time" id="time-11">
+                                    <div>11:00</div>
+                                </label>
+                                <label class="time-slot">
+                                    <input type="radio" name="booking-time" id="time-12">
+                                    <div>12:00</div>
+                                </label>
+                                <label class="time-slot">
+                                    <input type="radio" name="booking-time" id="time-13">
+                                    <div>13:00</div>
+                                </label>
+                                <label class="time-slot">
+                                    <input type="radio" name="booking-time" id="time-14">
+                                    <div>14:00</div>
+                                </label>
+                                <label class="time-slot">
+                                    <input type="radio" name="booking-time" id="time-15">
+                                    <div>15:00</div>
+                                </label>
+                                <label class="time-slot">
+                                    <input type="radio" name="booking-time" id="time-16">
+                                    <div>16:00</div>
+                                </label>
+                                <label class="time-slot">
+                                    <input type="radio" name="booking-time" id="time-17">
+                                    <div>17:00</div>
+                                </label>
+                                <label class="time-slot">
+                                    <input type="radio" name="booking-time" id="time-18">
+                                    <div>18:00</div>
+                                </label>
+                                <label class="time-slot">
+                                    <input type="radio" name="booking-time" id="time-19">
+                                    <div>19:00</div>
+                                </label>
+                                <label class="time-slot">
+                                    <input type="radio" name="booking-time" id="time-20">
+                                    <div>20:00</div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between mt-3">
+                        <label for="window-step1" class="booking-button">Назад</label>
+                        <button type="button" class="booking-button" id="bookButton">Записаться</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="booking-modal" id="errorModal">
+            <div class="booking-modal-content">
+                <div class="booking-modal-title">Заполните все поля</div>
+                <div class="booking-modal-text">Пожалуйста, заполните все поля!</div>
+                <div class="booking-modal-buttons">
+                    <button class="booking-modal-button confirm" id="closeError">ОК</button>
+                </div>
+            </div>
+        </div>
+        <div class="booking-modal" id="bookingModal">
+            <div class="booking-modal-content">
+                <div class="booking-modal-title">Запись подтверждена!</div>
+                <div class="booking-modal-text">Вы успешно записались!</div>
+                <div class="booking-modal-buttons">
+                    <button class="booking-modal-button confirm" id="confirmBooking">В профиль</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="web/js/order.js"></script>
 </body>
 
 </html>

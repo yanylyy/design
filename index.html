@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная</title>
     <link rel="stylesheet" href="web/css/style.css">
+    <link rel="icon" type="image/x-icon" href="web/img/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 
 <body>
@@ -34,7 +37,7 @@
                     <nav>
                         <li><a href="profile.html" class="bold-20">Профиль</a></li>
                         <li><a href="auth.html" class="bold-20">Войти</a></li>
-                        <li><a href="#" class="bold-20">Выйти</a></li>
+                        <li><a href="index.html" class="bold-20">Выйти</a></li>
                     </nav>
                 </div>
             </div>
@@ -54,7 +57,7 @@
                 <nav>
                     <li><a href="profile.html" class="bold-20">Профиль</a></li>
                     <li><a href="auth.html" class="bold-20">Войти</a></li>
-                    <li><a href="#" class="bold-20">Выйти</a></li>
+                    <li><a href="index.html" class="bold-20">Выйти</a></li>
                 </nav>
             </div>
         </div>
@@ -74,7 +77,7 @@
                         мы раскрываем вашу индивидуальность </p>
                 </div>
                 <div class="order">
-                    <button class="button-order">Записаться</button>
+                    <a href="order.html" class="button-order">Записаться</a>
                 </div>
             </div>
         </div>
@@ -116,45 +119,42 @@
         </div>
         <div class="our-works">
             <h2>Наши работы</h2>
-            <div class="carousel">
-                <button class="carousel-btn-l">
-                    <img src="web/img/buttons/left.svg" alt="Предыдущая">
-                </button>
-                <div class="carousel-track">
-                    <div class="work-item">
-                        <img src="web/img/ourwork/ourwork1.png" alt="Наша работа 1">
+            <div class="carousel-wrapper">
+                <div id="worksCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="d-flex justify-content-center gap-4">
+                                <img src="web/img/ourwork/ourwork1.png" class="work-item-img" alt="Наша работа 1">
+                                <img src="web/img/ourwork/ourwork2.png" class="work-item-img" alt="Наша работа 2">
+                                <img src="web/img/ourwork/ourwork3.png" class="work-item-img" alt="Наша работа 3">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-center gap-4">
+                                <img src="web/img/ourwork/ourwork4.png" class="work-item-img" alt="Наша работа 4">
+                                <img src="web/img/ourwork/ourwork5.png" class="work-item-img" alt="Наша работа 5">
+                                <img src="web/img/ourwork/ourwork6.png" class="work-item-img" alt="Наша работа 6">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-center gap-4">
+                                <img src="web/img/ourwork/ourwork7.png" class="work-item-img" alt="Наша работа 7">
+                                <img src="web/img/ourwork/ourwork8.png" class="work-item-img" alt="Наша работа 8">
+                                <img src="web/img/ourwork/ourwork9.png" class="work-item-img" alt="Наша работа 9">
+                            </div>
+                        </div>
                     </div>
-                    <div class="work-item">
-                        <img src="web/img/ourwork/ourwork2.png" alt="Наша работа 2">
-                    </div>
-                    <div class="work-item">
-                        <img src="web/img/ourwork/ourwork3.png" alt="Наша работа 3">
-                    </div>
-                    <div class="work-item">
-                        <img src="web/img/ourwork/ourwork4.png" alt="Наша работа 4">
-                    </div>
-                    <div class="work-item">
-                        <img src="web/img/ourwork/ourwork5.png" alt="Наша работа 5">
-                    </div>
-                    <div class="work-item">
-                        <img src="web/img/ourwork/ourwork6.png" alt="Наша работа 6">
-                    </div>
-                    <div class="work-item">
-                        <img src="web/img/ourwork/ourwork7.png" alt="Наша работа 7">
-                    </div>
-                    <div class="work-item">
-                        <img src="web/img/ourwork/ourwork8.png" alt="Наша работа 8">
-                    </div>
-                    <div class="work-item">
-                        <img src="web/img/ourwork/ourwork9.png" alt="Наша работа 9">
-                    </div>
-                    <div class="work-item">
-                        <img src="web/img/ourwork/ourwork10.png" alt="Наша работа 10">
-                    </div>
+                    <button class="carousel-control-prev centered-btn prev-btn" type="button"
+                        data-bs-target="#worksCarousel" data-bs-slide="prev">
+                        <img src="web/img/buttons/left.svg" alt="Предыдущая">
+                        <div class="visually-hidden">Предыдущая</div>
+                    </button>
+                    <button class="carousel-control-next centered-btn next-btn" type="button"
+                        data-bs-target="#worksCarousel" data-bs-slide="next">
+                        <img src="web/img/buttons/right.svg" alt="Следующая">
+                        <div class="visually-hidden">Следующая</div>
+                    </button>
                 </div>
-                <button class="carousel-btn-r">
-                    <img src="web/img/buttons/right.svg" alt="Следующая">
-                </button>
             </div>
         </div>
         <div class="rating-block">
@@ -200,6 +200,9 @@
             <p class="bold-w">YANIhair © 2007–2025</p>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
