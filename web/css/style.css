@@ -50,6 +50,21 @@
     display: none;
     --bs-dropdown-border-color: none !important;
     --bs-dropdown-min-width: 0rem !important;
+
+}
+
+.account-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    display: none;
+}
+
+.account-toggle:checked~.account-overlay {
+    display: block;
 }
 
 .dropdown-menu nav {
@@ -835,6 +850,11 @@ footer {
     padding-top: 80px;
 }
 
+.row {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+
 .p-top-section {
     display: flex;
     gap: 120px;
@@ -1086,7 +1106,10 @@ p {
 
 .history-close-btn {
     box-shadow: none !important;
+    opacity: 1 !important;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e") !important;
 }
+
 
 /* Анимации */
 input:focus {
