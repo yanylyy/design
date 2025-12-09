@@ -1316,9 +1316,7 @@ footer nav a:hover::after {
     overflow: hidden;
     display: flex;
     justify-content: center;
-    /* align-items: center; */
 }
-
 
 
 #window-step1:checked~#window1,
@@ -2229,6 +2227,24 @@ footer nav a:hover::after {
         gap: 40px;
     }
 
+    .carousel-inner .d-flex {
+        display: flex !important;
+        justify-content: center !important;
+        gap: 0 !important;
+    }
+
+    .carousel-item:not(.active) {
+        display: none !important;
+    }
+
+
+    .carousel-item.active .d-flex img:not(:first-child) {
+        display: none !important;
+    }
+
+    .carousel-item.active .d-flex {
+        width: 100% !important;
+    }
 }
 
 
@@ -2544,5 +2560,17 @@ footer nav a:hover::after {
 
     .carousel-control-next.centered-btn {
         right: 0 !important;
+    }
+}
+
+@media (min-width: 720px) and (max-width: 992px) {
+    .carousel-inner .d-flex {
+        gap: 20px !important;
+    }
+
+    .carousel-inner .d-flex img {
+        width: 30% !important;
+        max-width: 250px !important;
+        height: auto;
     }
 }
