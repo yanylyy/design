@@ -2090,16 +2090,9 @@ footer nav a:hover::after {
 }
 
 @media(max-width: 721px) {
-    .main-content {
-        padding: 40px 0px 0px 0px;
-    }
 
     .right-content {
         padding-left: 0px;
-    }
-
-    .large-photo-img {
-        display: none;
     }
 
     .button-auth {
@@ -2281,7 +2274,7 @@ footer nav a:hover::after {
 }
 
 
-@media (max-width: 550px) {
+@media (max-width: 570px) {
     header {
         padding: 10px 15px;
         position: relative;
@@ -2570,7 +2563,7 @@ footer nav a:hover::after {
     }
 }
 
-@media (min-width: 551px) {
+@media (min-width: 570px) {
 
     .hamburger,
     .mobile-nav,
@@ -2584,9 +2577,22 @@ footer nav a:hover::after {
     nav {
         gap: 45px;
     }
+
+    .main-content {
+        padding: 40px 0px 0px 0px;
+    }
+
+    .large-photo-img {
+        display: none;
+    }
+
+    .right-content {
+        padding-left: 0;
+    }
 }
 
 @media(max-width: 1250px) {
+
     .carousel-control-prev.centered-btn {
         left: 0 !important;
     }
